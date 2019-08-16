@@ -17,6 +17,7 @@ $curso1 = new Curso('POO en php', 'Yesi Days', '3 sesiones', 10, true);
 $curso2 = new Curso('Javascript 0', 'Alvaro Felipe', '6 sesiones', 11, true);
 
 echo $curso1->obtenerTitulo();
+echo '<br>';
 echo $curso1->obtenerProfesor();
 $curso1->asignarTitulo('Laravel');
 echo $curso1->obtenerTitulo();

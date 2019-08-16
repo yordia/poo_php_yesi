@@ -1,5 +1,23 @@
 <?php
-class Curso
+#interfaces ->interface->implements
+interface Requerimiento{
+    public function asignaRequerimiento($listado){
+
+    }
+    public function obtenerRequerimiento(){
+
+    }
+}
+
+interface Conocimiento{
+    public function asignaConocimiento($listado){
+
+    }
+    public function obtenerConocimiento(){
+        
+    }
+}
+class Curso implements Requerimiento,Conocimiento
 {
     private $titulo2;
     private $profesor;
