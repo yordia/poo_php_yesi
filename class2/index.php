@@ -22,6 +22,9 @@ echo $curso1->obtenerProfesor();
 $curso1->asignarTitulo('Laravel');
 echo $curso1->obtenerTitulo();
 
+// imprimiendo metodo de la interfaz
+$curso1->asignaRequerimiento(['PHP desde 0','Conocimiento basico PHP','ganas de aprender','Practica']);
+$curso1->obtenerRequerimiento();
 ?>
 
 <body>
