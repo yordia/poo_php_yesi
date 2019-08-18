@@ -24,7 +24,11 @@ echo $curso1->obtenerTitulo();
 
 // imprimiendo metodo de la interfaz
 $curso1->asignaRequerimiento(['PHP desde 0','Conocimiento basico PHP','ganas de aprender','Practica']);
-$curso1->obtenerRequerimiento();
+$curso1->obtenerRequerimiento();echo '<br>';
+
+echo Curso::$moneda;
+echo Curso::obtenerDenominacion();
+
 ?>
 
 <body>

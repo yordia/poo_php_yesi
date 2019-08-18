@@ -19,7 +19,8 @@ class Curso implements Requerimiento, Conocimiento
     private $costo2;
     private $disponible2;
     private $listado;
-
+// add propiedad(atributo) static
+public static $moneda='USD';
     #creando nuestro constructor
     public function __construct($tit, $profesor, $duracion, $costo, $disponible)
     {
@@ -65,4 +66,7 @@ class Curso implements Requerimiento, Conocimiento
     { }
     public function obtenerConocimiento()
     { }
+    static function obtenerDenominacion(){
+        return self::$moneda;
+    }
 }
